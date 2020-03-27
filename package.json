@@ -1,7 +1,7 @@
 {
-  "name": "cliente-open-api",
+  "name": "swagger-generator-sample",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sample of using swagger generator in order to share APIs with external teams and projects.",
   "main": "index.js",
   "scripts": {
     "generate-server": "java -jar ./swagger-generator/swagger-codegen-cli-2.4.10.jar generate -i ./swagger.json -l nodejs-server -o ./generated/node-server -c ./swagger-generator/config.json",
@@ -10,6 +10,6 @@
     "generate-csharp-client": "java -jar ./swagger-generator/swagger-codegen-cli-2.4.10.jar generate -i ./swagger.json -l csharp -o ./generated/csharp-client -c ./swagger-generator/config.json",
     "generate-java-client": "java -jar ./swagger-generator/swagger-codegen-cli-2.4.10.jar generate -i ./swagger.json -l java -o ./generated/java-client -c ./swagger-generator/config.json"
   },
-  "author": "",
+  "author": "Javier Ros Moreno",
   "license": "ISC"
 }
