@@ -1,0 +1,13 @@
+{
+  "name": "cliente-open-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate-server": "java -jar ./swagger-generator/swagger-codegen-cli-2.4.10.jar generate -i ./swagger.json -l nodejs-server -o ./generated/node-server -c ./swagger-generator/config.json",
+    "generate-javascript-client": "java -jar ./swagger-generator/swagger-codegen-cli-2.4.10.jar generate -i ./swagger.json -l javascript -o ./generated/javascript-client -c ./swagger-generator/config.json",
+    "generate-typescript-client": "java -jar ./swagger-generator/swagger-codegen-cli-2.4.10.jar generate -i ./swagger.json -l typescript-node -o ./generated/typescript-client -c ./swagger-generator/config.json"
+  },
+  "author": "",
+  "license": "ISC"
+}
